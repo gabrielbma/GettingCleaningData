@@ -1,7 +1,5 @@
 ## TODO:
-## Copy run_analysis.R into Git Repository --> GitHub
 ## Write CodeBook.md --> GitHub
-## Write README.md --> GitHub
 
 # This is the parent function used to call other functions
 tidySamsungData <- function() {
