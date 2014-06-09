@@ -15,8 +15,15 @@ tidySamsungData <- function() {
     # Read in the tables and merge them into a single table
     mergedTable <- mergeTables()
     
+    # Write the merged data set to a separate TXT file
+    write.table(mergedTable, file = "ARyanSMSMergedSamsungData.txt", row.names = FALSE)
+    
     # Free up as much memory as possible
     collectGarbage()
+    
+    # Notify the user that the merged data file was successfully created
+    message(Sys.time())
+    message("ARyanSMSMergedSamsungData.txt has been created in your working directory")
     
     # Manipulate the merged data table to create the required table of averages
     summaryTable <- summariseData(mergedTable)
@@ -136,6 +143,9 @@ mergeTables <- function() {
     # Column bind the subjects, activities and data together
     bindedData <- cbind(subjects, activities, datas)
     
+    # Transform the headers to something a bit more readable
+    featList <- transformColumnNames(featList)
+    
     # Give the data headers
     names(bindedData) <- c("SubjectID", "Activity", featList[,2])
     
@@ -144,6 +154,28 @@ mergeTables <- function() {
     
     # Return the merged table with activity names instead of numbers
     return(mergedData)
+}
+
+# This function will transform the given variable names into sensible column headers
+transformColumnNames<- function(featList) {
+    # First, replace names starting with "t" to "Time"
+    featList[,2] <- gsub("^t","Time",featList[,2])
+    
+    # Then replace names starting with "f" to "Freq"
+    featList[,2] <- gsub("^f","Freq",featList[,2])
+    
+    # Then replace "-mean()" with "Mean"
+    featList[,2] <- gsub("-mean\\(\\)","Mean",featList[,2])
+    
+    # Then replace "-std()" with "STD"
+    featList[,2] <- gsub("-std\\(\\)","STD",featList[,2])
+    
+    # Then remove the hyphen "-" from before the axis direction at the end of the name
+    featList[,2] <- gsub("-","",featList[,2])
+    View(featList)
+    
+    # Return the new column name vector
+    return(featList)
 }
 
 # This function will replace the activity numbers 1-6 with their respective names
