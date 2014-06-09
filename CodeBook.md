@@ -96,6 +96,7 @@ The tidy data considers only the mean and standard deviation functions. The valu
 
 ##Recipe
 The following steps describe the transformations that must occur to the raw data in order to replicate the tidy data that I have submitted from the raw data provided:  
+
 **1.** Read the _subject_test.txt_ file and store it in a data frame  
 **2.** Read the _subject_train.txt_ file and store it in a data frame  
 **3.** Row bind the data frames from steps 1 and 2, with the step 1 data frame at the top. This will result in a single-column data frame containing the list of subjects for the measurement data  
