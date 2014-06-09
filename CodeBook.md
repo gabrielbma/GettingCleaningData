@@ -23,3 +23,21 @@ The following table describes each of the variables used in my tidy data set. A 
 | 12 | TimeGravityAccSTDX | The standard deviation of the 128 time domain linear gravity acceleration signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
 | 13 | TimeGravityAccSTDY | The standard deviation of the 128 time domain linear gravity acceleration signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
 | 14 | TimeGravityAccSTDZ | The standard deviation of the 128 time domain linear gravity acceleration signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 15 | TimeBodyAccJerkMeanX | The average of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 16 | TimeBodyAccJerkMeanY | The average of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 17 | TimeBodyAccJerkMeanZ | The average of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 18 | TimeBodyAccJerkSTDX | The standard deviation of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 19 | TimeBodyAccJerkSTDY | The standard deviation of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 20 | TimeBodyAccJerkSTDZ | The standard deviation of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 21 | TimeBodyGyroMeanX | The average of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 22 | TimeBodyGyroMeanY | The average of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 23 | TimeBodyGyroMeanZ | The average of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 24 | TimeBodyGyroSTDX | The standard deviation of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 25 | TimeBodyGyroSTDY | The standard deviation of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 26 | TimeBodyGyroSTDZ | The standard deviation of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 27 | TimeBodyGyroJerkMeanX | The average of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 28 | TimeBodyGyroJerkMeanY | The average of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 29 | TimeBodyGyroJerkMeanZ | The average of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 30 | TimeBodyGyroJerkSTDX | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 31 | TimeBodyGyroJerkSTDY | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 32 | TimeBodyGyroJerkSTDZ | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
