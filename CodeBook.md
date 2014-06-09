@@ -110,8 +110,9 @@ The following steps describe the transformations that must occur to the raw data
 **13.** Column bind the subjects data frame from step 3, the activity ID data frame from step 6 and the measurements data frame from step 12, in that order from left-to-right  
 **14.** Subset the features data frame from step 7, by only keeping rows that are TRUE in the logical vector created in step 8. This will form the list of headers for the columns that were extracted from the measurements data in steps 10 and 11  
 **15.** Transform the feature names from column 2 in the data frame from step 14 into something readable as follows:  
-  + Replace any headings starting with "t" with "Time"  
-  + Replace any headings starting with "f" with "Freq"  
+
+  **a.** Replace any headings starting with "t" with "Time"  
+  **b.** Replace any headings starting with "f" with "Freq"  
   + Replace any headings containing "-mean()" with "Mean"  
   + Replace any headings containint "-std()" with "STD"  
   + Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
