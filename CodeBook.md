@@ -111,8 +111,8 @@ The following steps describe the transformations that must occur to the raw data
 **14.** Subset the features data frame from step 7, by only keeping rows that are TRUE in the logical vector created in step 8. This will form the list of headers for the columns that were extracted from the measurements data in steps 10 and 11  
 **15.** Transform the feature names from column 2 in the data frame from step 14 into something readable as follows:  
 
-  **a.** Replace any headings starting with "t" with "Time"  
-  **b.** Replace any headings starting with "f" with "Freq"  
+  **_a._** Replace any headings starting with "t" with "Time"  
+  **_b._** Replace any headings starting with "f" with "Freq"  
   **c.** Replace any headings containing "-mean()" with "Mean"  
   **d.** Replace any headings containint "-std()" with "STD"  
   **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
@@ -125,4 +125,5 @@ The following steps describe the transformations that must occur to the raw data
   **c.** The remainder of the columns are named using the second column of the subsetted and transformed data frame created in step 15  
 
 **17.** Read the _activity_labels.txt_ file and store it in a data frame  
-**18.** 
+**18.** Use the data frame from step 17 to convert activity IDs to activity names in the merged data frame from step 16  
+**19.** 
