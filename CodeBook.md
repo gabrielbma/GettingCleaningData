@@ -116,6 +116,7 @@ The following steps describe the transformations that must occur to the raw data
   + Replace any headings containint "-std()" with "STD"  
   + Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
   + Replace any instances of "BodyBody" with "Body"  
+
 **16.** Assign some names to the data frame from step 13 as follows:  
   + Column 1 name is "SubjectID"  
   + Column 2 name is "Activity"  
