@@ -22,10 +22,10 @@ Once sourced, run the following command to transform the data:
 > tidySamsungData()
 ```
 This function will perform the following tasks (for a more detailed description of each task, please refer to my Code Book (_CodeBook.md_):  
-# Verify the existence of all data files in the original raw data set
-# Combine the subject ID, the activity ID, and the _mean()_ and _std()_ columns from the X data files into a single table
-# Name the columns accordingly
-# Replace activity IDs with activity names
-# Write the new merged data table to a file called ARyanSMSMergedSamsungData.txt
-# Create a new summary table containing subject IDs, activity names, and the mean of the data from the merged table that match the subject and activity for each column
-# Write the new summary data table to a file called ARyanSMSTidySamsungData.txt
++ Verify the existence of all data files in the original raw data set
++ Combine the subject ID, the activity ID, and the _mean()_ and _std()_ columns from the X data files into a single table
++ Name the columns accordingly
++ Replace activity IDs with activity names
++ Write the new merged data table to a file called ARyanSMSMergedSamsungData.txt
++ Create a new summary table containing subject IDs, activity names, and the mean of the data from the merged table that match the subject and activity for each column
++ Write the new summary data table to a file called ARyanSMSTidySamsungData.txt
