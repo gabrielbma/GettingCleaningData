@@ -91,3 +91,32 @@ For each subject and each activity, it is important to note that there are multi
 ###Tidy Data
 The tidy data considers only the mean and standard deviation functions. The values present in each row of the tidy data table represent the average across all windows of each function (defined by the column header) for the subject ID listed in column 1 performing the activity listed in column 2.  
 **For example:** if there were 30 windows reported of subject 9 performing task 3 (WALKING_DOWNSTAIRS), then the tidy data will report the average of each appropriate column for those 30 windows (each window represented as an individual row in the raw data as previously mentioned).
+
+##Recipe
+The following steps describe the transformations that must occur to the raw data in order to replicate the tidy data that I have submitted:  
+**1.** Read the _subject_test.txt_ file and store it in a data frame  
+**2.** Read the _subject_train.txt_ file and store it in a data frame  
+**3.** Row bind the data frames from steps 1 and 2, with the step 1 data frame at the top. This will result in a single-column data frame containing the list of subjects for the measurement data  
+**4.** Read the _y_test.txt_ file and store it in a data frame  
+**5.** Read the _y_train.txt_ file and store it in a data frame  
+**6.** Row bind the data frames from steps 5 and 6, with the step 5 data frame at the top. This will result in a single-column data frame containing the list of activity IDs for the measurement data  
+**7.** Read the _features.txt_ file and store it in a data frame  
+**8.** Create a logical (TRUE/FALSE) vector calculated from the feature names. This vector should return TRUE only if "mean()" or "std()" is present in column 2 of the data frame from step 7  
+**9.** Create a character vector from the logical vector in step 8. This vector should read "numeric" if the logical vector is TRUE and "NULL" otherwise. This vector will be used to define the column classes of the measurement data. A column with a class "NULL" will not be read in, thus avoiding using too much memory when reading the large text files  
+**10.** Read the _X_test.txt_ file and store it in a data frame. Make sure that the colClasses parameter points to the vector that was created in step 9  
+**11.** Read the _X_train.txt_ file and store it in a data frame. Make sure that the colClasses parameter points to the vector that was created in step 9  
+**12.** Row bind the data frames from steps 10 and 11, with the step 10 data frame at the top. This will result in a single data frame containing all of the measurement data that was recorded  
+**13.** Column bind the subjects data frame from step 3, the activity ID data frame from step 6 and the measurements data frame from step 12, in that order from left-to-right  
+**14.** Subset the features data frame from step 7, by only keeping rows that are TRUE in the logical vector created in step 8. This will form the list of headers for the columns that were extracted from the measurements data in steps 10 and 11  
+**15.** Transform the feature names from column 2 in the data frame from step 14 into something readable as follows:  
+  **a.** Replace any headings starting with "t" with "Time"  
+  **b.** Replace any headings starting with "f" with "Freq"  
+  **c.** Replace any headings containing "-mean()" with "Mean"  
+  **d.** Replace any headings containint "-std()" with "STD"  
+  **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")
+  **f.** Replace any instances of "BodyBody" with "Body"
+**16.** Assign some names to the data frame from step 13 as follows:  
+  **a.** Column 1 name is "SubjectID"  
+  **b.** Column 2 name is "Activity"  
+  **c.** The remainder of the columns are named using the second column of the subsetted data frame created in step 15  
+**16.** 
