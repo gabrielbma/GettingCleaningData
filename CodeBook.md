@@ -6,6 +6,7 @@ The following table describes each of the variables used in my tidy data set. A 
 + N/A: no units are applicable to this variable
 + g: standard gravity units, a measure of linear acceleration
 + rad/s: radians per second, a measure of rotational velocity
+Each description is obtained from the descriptions provided in the raw data. Each variable describes the measurement that has been used to calculate the data in the table.
 
 | Column | Variable Name | Description | Units |
 |:------:|:--------------|:------------|:-----:|
@@ -41,3 +42,13 @@ The following table describes each of the variables used in my tidy data set. A 
 | 30 | TimeBodyGyroJerkSTDX | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
 | 31 | TimeBodyGyroJerkSTDY | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
 | 32 | TimeBodyGyroJerkSTDZ | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 33 | TimeBodyAccMagMean | The average of the 128 time domain linear body acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 34 | TimeBodyAccMagSTD | The standard deviation of the 128 time domain linear body acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 35 | TimeGravityAccMagMean | The average of the 128 time domain linear gravity acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 36 | TimeGravityAccMagSTD | The standard deviation of the 128 time domain linear gravity acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 37 | TimeBodyAccJerkMagMean | The average of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 38 | TimeBodyAccJerkMagSTD | The standard deviation of the 128 time domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 39 | TimeBodyGyroMagMean | The average of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 40 | TimeBodyGyroMagSTD | The standard deviation of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 41 | TimeBodyGyroJerkMagMean | The average of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 42 | TimeBodyGyroJerkMagSTD | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
