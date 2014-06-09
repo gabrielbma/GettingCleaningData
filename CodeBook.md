@@ -113,17 +113,26 @@ The following steps describe the transformations that must occur to the raw data
 
   **_a._** Replace any headings starting with "t" with "Time"  
   **_b._** Replace any headings starting with "f" with "Freq"  
-  **c.** Replace any headings containing "-mean()" with "Mean"  
-  **d.** Replace any headings containint "-std()" with "STD"  
-  **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
-  **f.** Replace any instances of "BodyBody" with "Body"  
+  **_c._** Replace any headings containing "-mean()" with "Mean"  
+  **_d._** Replace any headings containint "-std()" with "STD"  
+  **_e._** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
+  **_f._** Replace any instances of "BodyBody" with "Body"  
 
 **16.** Assign some names to the data frame from step 13 as follows:  
 
-  **a.** Column 1 name is "SubjectID"  
-  **b.** Column 2 name is "Activity"  
-  **c.** The remainder of the columns are named using the second column of the subsetted and transformed data frame created in step 15  
+  **_a._** Column 1 name is "SubjectID"  
+  **_b._** Column 2 name is "Activity"  
+  **_c._** The remainder of the columns are named using the second column of the subsetted and transformed data frame created in step 15  
 
 **17.** Read the _activity_labels.txt_ file and store it in a data frame  
 **18.** Use the data frame from step 17 to convert activity IDs to activity names in the merged data frame from step 16  
-**19.** 
+**19.** The data frame that has been created to this point in step 18 is the data set that can be viewed in _ARyanSMSMergedSamsungData.txt_ in this repo  
+**20.** Create a new data frame consisting of the following:  
+
+  **_a._** Column 1 has the number one 6 times, followed by the number two 6 times, etc. up to and including the number 30  
+  **_b._** Column 2 has the 6 activity names in alphabetical order (A-Z) repeated 30 times, so each activity name should appear only once next to each number in column 1  
+  **_c._** Column 3, Row 1 will have the average of all observations in column 3 of the merged data frame from step 18, given that the subject and activity in the data frame from step 18 are the same as the subject and activity in Row 1 of the data frame that we are in the process of creating during this step  
+  **_d._** Repeat part c for every row in column 3 of this data frame, and then for every remaining column in the data frame from step 18  
+  **_e._** Assign the column names from the data frame from step 18 to be the column names for this data frame too  
+
+**21.** The data frame that was just created in step 20 is the data set that was submitted, and can be viewed in _ARyanSMSTidySamsungData.txt_ in this repo
