@@ -94,7 +94,7 @@ The tidy data considers only the mean and standard deviation functions. The valu
 **For example:** if there were 30 windows reported of subject 9 performing task 3 (WALKING_DOWNSTAIRS), then the tidy data will report the average of each appropriate column for those 30 windows (each window represented as an individual row in the raw data as previously mentioned).
 
 ##Recipe
-The following steps describe the transformations that must occur to the raw data in order to replicate the tidy data that I have submitted:  
+The following steps describe the transformations that must occur to the raw data in order to replicate the tidy data that I have submitted from the raw data provided:  
 **1.** Read the _subject_test.txt_ file and store it in a data frame  
 **2.** Read the _subject_train.txt_ file and store it in a data frame  
 **3.** Row bind the data frames from steps 1 and 2, with the step 1 data frame at the top. This will result in a single-column data frame containing the list of subjects for the measurement data  
@@ -110,14 +110,15 @@ The following steps describe the transformations that must occur to the raw data
 **13.** Column bind the subjects data frame from step 3, the activity ID data frame from step 6 and the measurements data frame from step 12, in that order from left-to-right  
 **14.** Subset the features data frame from step 7, by only keeping rows that are TRUE in the logical vector created in step 8. This will form the list of headers for the columns that were extracted from the measurements data in steps 10 and 11  
 **15.** Transform the feature names from column 2 in the data frame from step 14 into something readable as follows:  
-  \t**a.** Replace any headings starting with "t" with "Time"  
-  **b.** Replace any headings starting with "f" with "Freq"  
-  **c.** Replace any headings containing "-mean()" with "Mean"  
-  **d.** Replace any headings containint "-std()" with "STD"  
-  **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
-  **f.** Replace any instances of "BodyBody" with "Body"  
+  **1.** Replace any headings starting with "t" with "Time"  
+  **2.** Replace any headings starting with "f" with "Freq"  
+  **3.** Replace any headings containing "-mean()" with "Mean"  
+  **4.** Replace any headings containint "-std()" with "STD"  
+  **5.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
+  **6.** Replace any instances of "BodyBody" with "Body"  
 **16.** Assign some names to the data frame from step 13 as follows:  
-  **a.** Column 1 name is "SubjectID"  
-  **b.** Column 2 name is "Activity"  
-  **c.** The remainder of the columns are named using the second column of the subsetted data frame created in step 15  
-**17.** 
+  **1.** Column 1 name is "SubjectID"  
+  **2.** Column 2 name is "Activity"  
+  **3.** The remainder of the columns are named using the second column of the subsetted and transformed data frame created in step 15  
+**17.** Read the _activity_labels.txt_ file and store it in a data frame  
+**18.** 
