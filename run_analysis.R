@@ -172,7 +172,9 @@ transformColumnNames<- function(featList) {
     
     # Then remove the hyphen "-" from before the axis direction at the end of the name
     featList[,2] <- gsub("-","",featList[,2])
-    View(featList)
+    
+    # Some of the variable names contain "BodyBody", so remove the duplicate "Body"
+    featList[,2] <- sub("BodyBody","Body",featList[,2])
     
     # Return the new column name vector
     return(featList)

@@ -62,4 +62,4 @@ My variable names follow the naming convention outlined below:
 For more information about my data set, please read the file CodeBook.md that is included in this repo. It will give the following information:  
 + A description of each variable at a lower level than what has been written above
 + A description of the data in the tidy data table
-+ A recipe describing how the raw data is transformed to obtain the tidy data
++ A recipe describing how the raw data is transformed to obtain the tidy data set that was submitted
