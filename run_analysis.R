@@ -1,6 +1,3 @@
-## TODO:
-## Write CodeBook.md --> GitHub
-
 # This is the parent function used to call other functions
 tidySamsungData <- function() {
     # Free up as much memory as possible before beginning
