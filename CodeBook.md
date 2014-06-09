@@ -6,6 +6,7 @@ The following table describes each of the variables used in my tidy data set. A 
 + N/A: no units are applicable to this variable
 + g: standard gravity units, a measure of linear acceleration
 + rad/s: radians per second, a measure of rotational velocity
+
 Each description is obtained from the descriptions provided in the raw data. Each variable describes the measurement that has been used to calculate the data in the table.
 
 | Column | Variable Name | Description | Units |
