@@ -84,7 +84,7 @@ Each description is obtained from the descriptions provided in the raw data. Eac
 The raw data, when merged appropriately into a single table, contains the following information on each row:
 + Subject ID (1 - 30)
 + Activity ID (1 - 6)
-+ One column for each measurement taken for a single window, which consists of 128 signals taken at 50Hz, for a duration of 2.56 seconds. The 128 signals are consolidated according to the required function (mean, standard deviation, max, etc.) and recorded in the table as a single value
++ One column for each measurement taken for a single window, which consists of 128 signals taken at 50Hz, for a duration of 2.56 seconds. The 128 signals are consolidated according to the required function (mean, standard deviation, max, etc.) and recorded in the table as a single value  
 For each subject and each activity, it is important to note that there are multiple rows representing the same measurement taken over a different window.
 
 ###Tidy Data
