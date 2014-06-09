@@ -1,7 +1,7 @@
 Code Book
 =========
 
-## Variable Names
+##Variable Names
 The following table describes each of the variables used in my tidy data set. A description of the units is as follows:
 + N/A: no units are applicable to this variable
 + g: standard gravity units, a measure of linear acceleration
@@ -52,3 +52,31 @@ Each description is obtained from the descriptions provided in the raw data. Eac
 | 40 | TimeBodyGyroMagSTD | The standard deviation of the 128 time domain angular body velocity signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
 | 41 | TimeBodyGyroJerkMagMean | The average of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
 | 42 | TimeBodyGyroJerkMagSTD | The standard deviation of the 128 time domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 43 | FreqBodyAccMeanX | The average of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 44 | FreqBodyAccMeanY | The average of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 45 | FreqBodyAccMeanZ | The average of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 46 | FreqBodyAccSTDX | The standard deviation of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 47 | FreqBodyAccSTDY | The standard deviation of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 48 | FreqBodyAccSTDZ | The standard deviation of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 49 | FreqBodyAccJerkMeanX | The average of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 50 | FreqBodyAccJerkMeanY | The average of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 51 | FreqBodyAccJerkMeanZ | The average of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 52 | FreqBodyAccJerkSTDX | The standard deviation of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the X-axis | g |
+| 53 | FreqBodyAccJerkSTDY | The standard deviation of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Y-axis | g |
+| 54 | FreqBodyAccJerkSTDZ | The standard deviation of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, along the Z-axis | g |
+| 55 | FreqBodyGyroMeanX | The average of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 56 | FreqBodyGyroMeanY | The average of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 57 | FreqBodyGyroMeanZ | The average of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 58 | FreqBodyGyroSTDX | The standard deviation of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the X-axis | rad/s |
+| 59 | FreqBodyGyroSTDY | The standard deviation of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Y-axis | rad/s |
+| 60 | FreqBodyGyroSTDZ | The standard deviation of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, around the Z-axis | rad/s |
+| 61 | FreqBodyAccMagMean | The average of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 62 | FreqBodyAccMagSTD | The standard deviation of the 128 frequency domain linear body acceleration signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 63 | FreqBodyAccJerkMagMean | The average of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 64 | FreqBodyAccJerkMagSTD | The standard deviation of the 128 frequency domain linear body acceleration jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | g |
+| 65 | FreqBodyGyroMagMean | The average of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 66 | FreqBodyGyroMagSTD | The standard deviation of the 128 frequency domain angular body velocity signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 67 | FreqBodyGyroJerkMagMean | The average of the 128 frequency domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+| 68 | FreqBodyGyroJerkMagSTD | The standard deviation of the 128 frequency domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
+
+##Data Values

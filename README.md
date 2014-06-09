@@ -56,7 +56,7 @@ My variable names follow the naming convention outlined below:
 + End of variable name (prior to the last character):
   + "Mean" indicates that the value is an estimate of the mean of the signal
   + "STD" indicates that the value is an estimate of the standard deviation of the signal
-+ Last character of variable name - this is either an X, Y or Z, and represents the 3-dimensional axis that the respective measurement was taken along
++ Last character of variable name - this is either an X, Y or Z, and represents the 3-dimensional axis that the respective measurement was taken along. The exception to this rule is the magnitude measurements, which are taken from the 3-dimensional vector representing the combination of X, Y and Z. These variables contain a "Mag" before the "Mean"/"STD"
 
 ###Code Book
 For more information about my data set, please read the file CodeBook.md that is included in this repo. It will give the following information:  
