@@ -12,7 +12,7 @@ There are 5 files in this repository:
 **5.** run_analysis.R - my R Script that can be used to prouce ARyanSMSTidySamsungData.txt from the raw Samsung data  
 
 ##Running My Script
-Before running my R Script, the raw Samsung data must be in your working directory, in the same directory tree as it came zipped in (i.e. UCI HAR Dataset\...).  
+Before running my R Script, the raw Samsung data must be in your working directory, in the same directory tree as it came zipped in (i.e. UCI HAR Dataset/...).  
 All data transformations required to create a tidy data set from the raw Samsung data can be completed by sourcing only the run_analysis R Script:  
 ```S
 > source("run_analysis.R") #This assumes the file is saved in your working directory
