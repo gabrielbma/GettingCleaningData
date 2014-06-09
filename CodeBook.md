@@ -7,5 +7,4 @@ The following table describes each of the variables used in my tidy data set.
 | Variable Name | Description | Units |
 |:--------------|:------------|:-----:|
 | SubjectID | A number from 1 to 30 used as an identifier for each test subject (person) | N/A |
-| Activity | The activity that the subject performed to obtain the given measurements | N/A |
-| Activity | The activity that the subject performed to obtain the given measurements. Can be any one of the following:<ul><li>LAYING</li><li>SITTING</li></ul> | N/A |
+| Activity | The activity that the subject performed to obtain the given measurements. Can be any one of the following:<ul><li>LAYING</li><li>SITTING</li><li>STANDING</li><li>WALKING</li><li>WALKING_DOWNSTAIRS</li><li>WALKING_UPSTAIRS</li></ul>I will assume that these activity names are descriptive enough that I don't need to explain them in any great detail | N/A |
