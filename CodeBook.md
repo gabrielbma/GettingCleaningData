@@ -90,6 +90,7 @@ For each subject and each activity, it is important to note that there are multi
 
 ###Tidy Data
 The tidy data considers only the mean and standard deviation functions. The values present in each row of the tidy data table represent the average across all windows of each function (defined by the column header) for the subject ID listed in column 1 performing the activity listed in column 2.  
+
 **For example:** if there were 30 windows reported of subject 9 performing task 3 (WALKING_DOWNSTAIRS), then the tidy data will report the average of each appropriate column for those 30 windows (each window represented as an individual row in the raw data as previously mentioned).
 
 ##Recipe
@@ -109,14 +110,14 @@ The following steps describe the transformations that must occur to the raw data
 **13.** Column bind the subjects data frame from step 3, the activity ID data frame from step 6 and the measurements data frame from step 12, in that order from left-to-right  
 **14.** Subset the features data frame from step 7, by only keeping rows that are TRUE in the logical vector created in step 8. This will form the list of headers for the columns that were extracted from the measurements data in steps 10 and 11  
 **15.** Transform the feature names from column 2 in the data frame from step 14 into something readable as follows:  
-  **a.** Replace any headings starting with "t" with "Time"  
+  \t**a.** Replace any headings starting with "t" with "Time"  
   **b.** Replace any headings starting with "f" with "Freq"  
   **c.** Replace any headings containing "-mean()" with "Mean"  
   **d.** Replace any headings containint "-std()" with "STD"  
-  **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")
-  **f.** Replace any instances of "BodyBody" with "Body"
+  **e.** Remove any remaining instances of a hyphen (replace "-" with an empty string "")  
+  **f.** Replace any instances of "BodyBody" with "Body"  
 **16.** Assign some names to the data frame from step 13 as follows:  
   **a.** Column 1 name is "SubjectID"  
   **b.** Column 2 name is "Activity"  
   **c.** The remainder of the columns are named using the second column of the subsetted data frame created in step 15  
-**16.** 
+**17.** 
