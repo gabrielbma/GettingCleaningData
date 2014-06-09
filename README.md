@@ -53,6 +53,12 @@ My variable names follow the naming convention outlined below:
   + "Time" represents a time domain signal measurement
   + "Freq" represents a frequency domain signal measurement
 + Middle of variable name - these remain unchanged from the raw data, as they are as descriptive as is sufficient to understand the measurement being reported
-+ End of variable name:
++ End of variable name (prior to the last character):
   + "Mean" indicates that the value is an estimate of the mean of the signal
   + "STD" indicates that the value is an estimate of the standard deviation of the signal
++ Last character of variable name - this is either an X, Y or Z, and represents the 3-dimensional axis that the respective measurement was taken along
+###Code Book
+For more information about my data set, please read the file CodeBook.md that is included in this repo. It will give the following information:  
++ A description of each variable at a lower level than what has been written above
++ A description of the data in the tidy data table
++ A recipe describing how the raw data is transformed to obtain the tidy data
