@@ -11,3 +11,5 @@ There are 4 files in this repository:
 **4.** run_analysis.R - my R Script that can be used to prouce ARyanSMSTidySamsungData.txt from the raw Samsung data  
 
 ##run_analysis.R
+All data transformations required to create a tidy data set from the raw Samsung data can be completed by sourcing this R Script:  
+{{> source("run_analysis.R") # This assumes the file is saved in your working directory}}
