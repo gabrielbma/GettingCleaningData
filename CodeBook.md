@@ -80,3 +80,12 @@ Each description is obtained from the descriptions provided in the raw data. Eac
 | 68 | FreqBodyGyroJerkMagSTD | The standard deviation of the 128 frequency domain angular body velocity jerk signals captured within a 2.56 second window at 50Hz, calculated from the magnitude of the 3-dimensional vectors | rad/s |
 
 ##Data Values
+###Raw Data
+The raw data, when merged appropriately into a single table, contains the following information on each row:
++ Subject ID (1 - 30)
++ Activity ID (1 - 6)
++ One column for each measurement taken for a single window, which consists of 128 signals taken at 50Hz, for a duration of 2.56 seconds. The 128 signals are consolidated according to the required function (mean, standard deviation, max, etc.) and recorded in the table as a single value
+For each subject and each activity, it is important to note that there are multiple rows representing the same measurement taken over a different window.
+###Tidy Data
+The tidy data considers only the mean and standard deviation functions. The values present in each row of the tidy data table represent the average across all windows of each function for the subject ID listed in column 1 performing the activity listed in column 2.  
+For example: if there were 30 windows reported of subject 9 performing task 3 (WALKING_DOWNSTAIRS), then the tidy data will report the average of each column for those 30 windows, each represented as an individual row in the raw data.
