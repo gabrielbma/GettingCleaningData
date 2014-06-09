@@ -12,6 +12,6 @@ There are 4 files in this repository:
 
 ##run_analysis.R
 All data transformations required to create a tidy data set from the raw Samsung data can be completed by sourcing this R Script:  
-```R
+```rscript
 source("run_analysis.R") # This assumes the file is saved in your working directory
 ```
