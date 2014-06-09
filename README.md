@@ -43,16 +43,16 @@ My data set is tidy as it conforms to the 4 essential (and 3 important) rules of
 **2.** Each observation of each variable is in its own row  
 **3.** Rule 3 applies to multiple tables, which is not applicable here  
 **4.** Rule 4 applies to multiple tables, which is not applicable here  
-**5.** A header row has been included at the top of the file
-**6.** Each column has been given a descriptive name
+**5.** A header row has been included at the top of the file  
+**6.** Each column has been given a descriptive name  
 **7.** Rule 7 applies to multiple tables, which is not applicable here
 ###My Variables
-During my extraction of certain columns of the raw data, I have chosen to extract only those columns with a heading containing either "mean()" or "std()", as I believe that only these columns contain the measurements on the mean and standard deviation of each measurement.  
+During my extraction of certain columns of the raw data, I have chosen to extract only those columns with a heading containing either "mean()" or "std()", as I believe that only these columns contain the measurements on the mean and standard deviation of each measurement, as required by step 2 of the instructions.  
 My variable names follow the naming convention outlined below:  
 + Start of variable name:
-++ "Time" represents a time domain signal measurement
-++ "Freq" represents a frequency domain signal measurement
+  + "Time" represents a time domain signal measurement
+  + "Freq" represents a frequency domain signal measurement
 + Middle of variable name - these remain unchanged from the raw data, as they are as descriptive as is sufficient to understand the measurement being reported
 + End of variable name:
-++ "Mean" indicates that the value is an estimate of the mean of the signal
-++ "STD" indicates that the value is an estimate of the standard deviation of the signal
+  + "Mean" indicates that the value is an estimate of the mean of the signal
+  + "STD" indicates that the value is an estimate of the standard deviation of the signal
